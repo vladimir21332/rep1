@@ -23,4 +23,4 @@ class TestAmazonPage:
     def test_microsoft_page(self, test_setup):
         driver.maximize_window()
         driver.get("https://microsoft.com/")
-        time.sleep(2)
+        time.sleep(3)

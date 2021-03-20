@@ -4,7 +4,6 @@ import time
 from pytest import mark
 from webdriver_manager.chrome import ChromeDriverManager
 
-@mark.x
 class TestAmazonPage:
     @pytest.fixture()
     def test_setup(self):
@@ -19,7 +18,7 @@ class TestAmazonPage:
         time.sleep(2)
         driver.quit()
 
-    @mark.ui
+    @pytest.mark.ui
     def test_google_page_2(self, test_setup):
         driver.maximize_window()
         driver.get("https://amazon.com/")

@@ -22,4 +22,4 @@ class TestAmazonPage:
     def test_google_page_2(self, test_setup):
         driver.maximize_window()
         driver.get("https://amazon.com/")
-        time.sleep(2)
+        time.sleep(1)
